@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -15,17 +16,17 @@ h1, h2, h3,p{
 }
 
 
+
 /* ---------------------------------------------------------------------------------- */
 /* HEADER - Fundo Amarelo e Logo */
 /* ---------------------------------------------------------------------------------- */
 .main-header {
     background-color: #f0c000; /* Será preenchido pela imagem de fundo */
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     position: relative; /* Para a logo ser posicionada absolutamente em relação a ele */
     color: rgb(0, 0, 0); /* Cor do texto no header */
     text-align: center;
-    text-size-adjust: 80%;
-    padding-bottom: 80px; /* Espaço para o menu abaixo */
+    
 }
 
 .header-content {
@@ -39,7 +40,7 @@ h1, h2, h3,p{
     position: absolute;
     top: 20px; /* Distância do topo */
     right: 20px; /* Distância da direita */
-    width: 150px; /* Tamanho da logo, ajuste conforme necessário */
+    width: 80px; /* Tamanho da logo, ajuste conforme necessário */
     height: auto;
     z-index: 10; /* Garante que a logo fique acima de outros elementos */
 }
@@ -52,15 +53,16 @@ h1, h2, h3,p{
 /* Estilo para o menu de navegação */
 .menu-nav {
     text-align: center;
-    margin-top: 20px; /* Espaço entre o H1 e o menu */
+    margin-top: 15px; /* Espaço entre o H1 e o menu */
 }
 
 .menu-nav a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;; 
-    font-size: 2rem; 
+    font-size: 1.2rem; 
     color: #FFFFFF; 
+    font-weight: bold;
     text-decoration: none; 
-    margin: 0 20px; 
+    margin: 0 10px; 
     padding: 5px 10px;
     border-radius: 5px;
     transition: color 0.3s;
@@ -84,7 +86,8 @@ section {
 }
 
 h2 {
-    font-size: 2.5rem;
+    color: white;
+    font-size: 0.80rem;
     margin-bottom: 20px;
     text-align: center;
     border-bottom: 2px solid #f0c000; /* Linha amarela para destacar a categoria */
@@ -92,14 +95,14 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-top: 25px;
     margin-bottom: 5px;
     color: #f0c000; /* Cor amarela para os nomes dos itens */
 }
 
 main p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     line-height: 1.5;
     margin-bottom: 15px;
     color: #EEE; /* Cor mais clara para as descrições */
@@ -109,20 +112,33 @@ main p {
 /* FOOTER*/
 
 .main-footer {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.0rem;
     background-color: #f0c000;
-    position: relative; /* Para que o pseudo-elemento com o fundo amarelo cubra */
-    padding: 20px;
+    background-size: 20px;
+    position: static; /* Para que o pseudo-elemento com o fundo amarelo cubra */
+    padding: 30px 20px;
     text-align: center; /* Alinha o texto à direita */
-    padding-top: 50px; /* Espaço para o conteúdo não colar no final do main */
+    
 }
 
 .main-footer img {
-    width: 80px;  /* Tente 80px, 100px, ou 60px */
+    width: 40px; 
     height: auto;
     margin: 10px 0; /* Adiciona um espaço extra em cima e embaixo */
 }
 
 
+.contact-info{
+    font-size: 0.80rem;
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 4rem; }
+    h2 { font-size: 3rem; }
+    h3 { font-size: 1.8rem; }
+    .menu-nav a { font-size: 1.8rem; margin: 0 20px; }
+    .logo-container { width: 150px; } /* Logo grande no PC */
+}
 
 
