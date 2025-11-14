@@ -24,6 +24,7 @@ h1, h2, h3,p{
     position: relative; /* Para a logo ser posicionada absolutamente em relação a ele */
     color: rgb(0, 0, 0); /* Cor do texto no header */
     text-align: center;
+    text-size-adjust: 80%;
     padding-bottom: 80px; /* Espaço para o menu abaixo */
 }
 
@@ -121,6 +122,7 @@ main p {
     height: auto;
     margin: 10px 0; /* Adiciona um espaço extra em cima e embaixo */
 }
+
 
 
 
